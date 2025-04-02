@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task-16</title>
+</head>
+<body>
+
+    <h1 style="color: rgb(255, 0, 0); text-align: center;"> Task:16</h1>
+    <p style="color: rgb(25, 220, 255); font-size: 78px ; text-align: center;">Closures</p>
+
+    <script>
+function createCounter() {
+  let count = 0; 
+  return function() {
+    count++; 
+    return count; 
+  };
+}
+const counter1 = createCounter();
+const counter2 = createCounter();
+console.log(counter1()); 
+console.log(counter1()); 
+console.log(counter1()); 
+
+console.log(counter2()); 
+console.log(counter2()); 
+console.log(counter1()); 
+console.log(counter2()); 
+
+    </script>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task-18</title>
+</head>
+<body>
+
+    <h1 style="color: rgb(48, 48, 255); text-align: center;">Task-18</h1>
+    <p style="color: rgb(27, 77, 27); font-size: 18px ; text-align: center;">Advanced Array Processing</p>
+
+    <script>
+    const students = [
+         { name: 'Siddiq', age: 22, grades: [90, 85, 88] },
+         { name: 'xxx', age: 14, grades: [75, 88, 70] },
+         { name: 'yyy', age: 29, grades: [95, 62, 89] },
+         { name: 'zzz', age: 27, grades: [95, 89, 92] }
+];
+    const studentNames = students.map(student => student.name);
+    const studentsOlderThan20 = students.filter(student => student.age > 20);
+    const totalGrades = students.reduce((acc, student) => {
+    const sum = student.grades.reduce((sum, grade) => sum + grade, 0);
+       return acc + sum;
+}, 0);
+    const totalGradesCount = students.reduce((acc, student) => acc + student.grades.length, 0);
+    const averageGrade = totalGrades / totalGradesCount;
+    const averageGradeOlderThan20 = students
+  .filter(student => student.age > 20) 
+  .reduce((acc, student) => {
+    const sum = student.grades.reduce((sum, grade) => sum + grade, 0);
+    return acc + sum;
+  }, 0) / students.filter(student => student.age > 20).reduce((acc, student) => acc + student.grades.length, 0);
+
+
+console.log('Student Names:', studentNames);
+console.log('Students Older Than 20:', studentsOlderThan20);
+console.log('Average Grade for All Students:', averageGrade.toFixed(2));
+console.log('Average Grade for Students Older Than 20:', averageGradeOlderThan20.toFixed(2));
+
+    </script>

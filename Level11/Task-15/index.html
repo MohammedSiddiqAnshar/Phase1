@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task-15</title>
+</head>
+<body>
+
+    <h1 style="color: rgb(39, 73, 6); text-align: center;">Task-15</h1>
+    <p style="color: rgb(227, 81, 8); font-size: 18px ; text-align: center;">Error Handling</p>
+
+    <script>
+      function divideNumbers(a, b) {
+      if (b === 0) {
+        throw new Error("Cannot divide by zero");
+  }
+      return a / b;
+}
+      try {
+        console.log(divideNumbers(5, 2));  
+        console.log(divideNumbers(10, 0));  
+}     catch (error) {
+        console.log("Error:", error.message);
+}     finally {
+        console.log("This block runs regardless of an error.");
+}
+
+    </script>

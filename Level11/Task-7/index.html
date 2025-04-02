@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task-7</title>
+</head>
+<body>
+
+    <h1 style="color: rgb(0, 0, 0); text-align: center;">Welcome</h1>
+    <p style="color: rgb(0, 87, 128); font-size: 18px ; text-align: center;">Arrays</p>
+
+    <script>
+        let favoriteFoods = ["Briyani", "Rice", "CurdRice", "ChickenRice", "Dosa"];
+        favoriteFoods.push("poratta");
+        favoriteFoods.shift();
+        let arrayLength = favoriteFoods.length;
+        let sushiIndex = favoriteFoods.indexOf("Briyani");
+        let slicedFoods = favoriteFoods.slice(2);
+        
+        
+        console.log("Original Array:", favoriteFoods);
+        console.log("Array Length:", arrayLength);
+        console.log("Index of 'CurdRice':", sushiIndex);
+        console.log("New Sliced Array:", slicedFoods);
+        
+    </script>

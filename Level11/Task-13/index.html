@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task-13</title>
+</head>
+<body>
+
+    <h1 style="color: rgb(144, 144, 248); text-align: center;"> Task-13</h1>
+    <p style="color: rgb(208, 22, 22); font-size: 18px ; text-align: center;">Object Destructuring</p>
+
+    <script>
+    const product = {
+    name: 'LED TV',
+    price: 30000.99,
+    category: 'Electronics',
+    inStock: true
+};
+    const { name, price, category, inStock } = product;
+    function formatProductDetails({ name, price, category, inStock }) {
+    return `Product: ${name}\nCategory: ${category}\nPrice: $${price}\nIn Stock: ${inStock ? 'Yes' : 'No'}`;
+}
+    const productDetails = formatProductDetails(product);
+    console.log(productDetails);
+
+    </script>
