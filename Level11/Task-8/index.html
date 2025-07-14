@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task-8</title>
+</head>
+<body>
+
+    <h1 style="color: blue; text-align: center;"> Task-8</h1>
+    <p style="color: rgb(117, 128, 0); font-size: 18px ; text-align: center;">Object Creation</p>
+
+    <script>
+    let person = {
+    name: "Siddiq",
+    age: 21,
+    city: "Cbe",
+    hobbies: ["Reading", "Gaming","cricket"]
+};
+
+    console.log("Name:", person.name);
+    console.log("Age:", person.age);
+    console.log("City:", person.city);
+    console.log("Hobbies:", person.hobbies);
+    
+    
+    person.job = "Full Stack Developer";
+    person.age = 20;
+    person.greet = function() {
+    return `Hello, my name is ${this.name} and I am ${this.age} years old.`;
+};
+
+    console.log(person.greet());
+
+    </script>

@@ -1,0 +1,4 @@
+siddiq: Average = 89.00, Max = 95, Min = 82
+mohammed: Average = 86.33, Max = 91, Min = 80
+yyyy: Average = 86.67, Max = 94, Min = 77
+Suresh: Average = 81.00, Max = 85, Min = 78
