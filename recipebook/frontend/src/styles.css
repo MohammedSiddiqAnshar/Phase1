@@ -1,0 +1,152 @@
+/* Global Styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #fdfbfb, #ebedee);
+  margin: 0;
+  padding: 2rem;
+  color: #333;
+  background-image: url('C:\Users\Mohammed aadil\OneDrive\Documents\PROJECT\level 20\level_20\recipebook\frontend\src\assets\360_F_378975954_G39M4ptXAjxKy80gbBIEo0wqBkk89gBF.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Vertically center */
+  align-items: center;     /* Horizontally center */
+  max-width: 1000px;
+  margin: auto;
+  padding: 1rem;
+  background: white;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+  border-radius: 16px;
+  animation: fadeIn 0.5s ease-in;
+  height: 100%; /* Ensure full height */
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+form input,
+form textarea {
+  align-items: center;
+  color: #78c3c5;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+  width: 100%;
+}
+
+form input:focus,
+form textarea:focus {
+  border-color: #4caf50;
+  outline: none;
+  background-color: #f6fff6;
+}
+
+button {
+  padding: 0.75rem 1.5rem;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  align-self: center;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background-color: #43a047;
+  transform: scale(1.03);
+}
+
+/* Recipe Cards */
+.card {
+  margin: 1rem auto;
+  align-items: center;
+  background: #fe4c4c;
+  padding: 1.25rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease-in-out, box-shadow 0.3s;
+  border-left: 6px solid #4caf50;
+  width: 80%;
+}
+
+.card:hover {
+  transform: scale(1.01);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+}
+
+.card h3 {
+  margin-top: 0;
+  color: #2e7d32;
+}
+
+.card p {
+  margin: 0.25rem 0;
+}
+
+.card ol {
+  padding-left: 1.25rem;
+}
+
+.tag {
+  display: inline-block;
+  background-color: #e8f5e9;
+  color: #2e7d32;
+  padding: 0.3rem 0.6rem;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Centered Layout */
+.centered-container {
+  display: flex;
+  justify-content: center;  /* Horizontally center */
+  align-items: center;      /* Vertically center */
+  height: 100vh;            /* Full viewport height */
+  background: linear-gradient(to right, #fceabb, #f8b500); /* Optional: gradient */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  text-align: center;
+  padding: 1rem;
+}
+
+.centered-content {
+  
+  background-color: white;
+  padding: 2rem 3rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  max-width: 500px;
+  width: 100%;
+}
+
+/* Responsive Grid Layout */
+@media screen and (min-width: 768px) {
+  .recipe-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    padding: 1rem;
+  }
+  .card {
+    
+    width: 90%;
+    margin-left: 0;
+  }
+}

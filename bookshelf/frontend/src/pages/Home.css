@@ -1,0 +1,22 @@
+.home-container {
+  min-height: 100vh;
+  background: 
+    linear-gradient(to right, rgba(59, 130, 246, 0.6), rgba(139, 92, 246, 0.6)),
+    url('https://t4.ftcdn.net/jpg/02/10/45/95/360_F_210459536_XmLDEcKq2DpeNLVmheuWeu9NM9aGKnih.jpg') no-repeat center center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+  /* .container {
+    max-width: 800px;
+    width: 100%;
+    padding: 2px;
+    margin-top: 1rem;
+    background-color: #31b7b7;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.05);
+    text-align: center;
+  } */
