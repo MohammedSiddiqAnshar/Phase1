@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task-17</title>
+</head>
+<body>
+
+    <h1 style="color: blue; text-align: center;"> Task-17</h1>
+    <p style="color: rgb(0, 0, 0); font-size: 18px ; text-align: center;">Array and Object Spread</p>
+
+    <script>
+       const array1 = [1, 2, 3];
+       const array2 = [4, 5, 6];
+       const combinedArray = [...array1, ...array2];
+       const object1 = { name: 'siddiq', age: 25 };
+       const object2 = { city: 'Thanjavur', occupation: 'Software Developer' };
+       const combinedObject = { ...object1, ...object2 };
+       const modifiedArray = [...array1];
+       modifiedArray.push(7);
+
+       console.log('Combined Array:', combinedArray);
+       console.log('Combined Object:', combinedObject);
+       console.log('Original Array:', array1);
+       console.log('Modified Array:', modifiedArray);
+
+    </script>

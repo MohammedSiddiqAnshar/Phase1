@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task-20</title>
+</head>
+<body>
+
+    <h1 style="color: rgb(153, 211, 66); text-align: center;"> Task-20 </h1>
+    <p style="color: rgb(47, 121, 47); font-size: 18px ; text-align: center;">Higher-Order Functions</p>
+
+    <script>
+        function operateOnArray(arr, callback) {
+        return arr.map(callback); 
+}       function double(num) {
+        return num * 2;
+}       function square(num) {
+        return num * num;
+}       function toString(num) {
+        return num.toString();
+}
+        const numbers = [1, 2, 3, 4, 5];
+        const doubled = operateOnArray(numbers, double);
+        const squared = operateOnArray(numbers, square);
+        const stringified = operateOnArray(numbers, toString);
+        console.log("Doubled:", doubled);
+        console.log("Squared:", squared);
+        console.log("Stringified:", stringified);
+
+    </script>
